@@ -1,3 +1,4 @@
+#!/bin/bash
 # Obtenha os inputs da action
 GITHUB_TOKEN=$1
 ISSUE_ID=$2
