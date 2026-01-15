@@ -3,7 +3,6 @@
 GITHUB_TOKEN=$1
 ISSUE_ID=$2
 COMMENT=$3
-GITHUB_REPOSITORY=$4
 
 # Inicialize o cliente do GitHub
 response=$(curl -s -X POST -H "Authorization: token ${GITHUB_TOKEN}" \
