@@ -1,0 +1,27 @@
+name: "Add comentario"
+description: "Add comentario em uma action docker"
+author: "Fernando Spelling"
+inputs:
+  GITHUB_TOKEN:
+    description: "Token dq qpi do GitHub com permissão para adicionar comentários"
+    required: true
+  issue-id:
+    description: "Número da issue ou pull request onde o comentário será adicionado"
+    required: true
+  comment:
+    description: "Conteúdo do comentário a ser adicionado"
+    required: true
+  GITHUB_REPOSITORY:
+    description: "Id do repositorio"
+    required: true
+outputs:
+  comment_id:
+    description: "ID do comentário adicionado"
+runs:
+  using: "docker"
+  image: Dockerfile
+  args:
+    - GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+    - issue-id: ${{ inputs.issue-id }}
+    - comment: ${{ inputs.comment }}
+    - GITHUB_REPOSITORY: ${{ inputs.GITHUB_REPOSITORY }}
