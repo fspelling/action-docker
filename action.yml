@@ -21,7 +21,7 @@ runs:
   using: "docker"
   image: Dockerfile
   args:
-    - GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
-    - issue-id: ${{ inputs.issue-id }}
-    - comment: ${{ inputs.comment }}
-    - GITHUB_REPOSITORY: ${{ inputs.GITHUB_REPOSITORY }}
+    - ${{ inputs.GITHUB_TOKEN }}
+    - ${{ inputs.issue-id }}
+    - ${{ inputs.comment }}
+    - ${{ inputs.GITHUB_REPOSITORY }}
