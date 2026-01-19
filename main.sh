@@ -16,4 +16,4 @@ comment_id=$(echo $response | jq -r .id)
 # Define o output com o ID do comentário
 echo "comment-id=${comment_id}" >> $GITHUB_OUTPUT
 
-echo "Comentário adicionado com sucesso! ID do comentário: $comment_id"
+echo "(V2) - Comentário adicionado com sucesso! ID do comentário: $comment_id"
