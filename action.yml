@@ -1,4 +1,4 @@
-name: "Add comentario"
+name: "Add comentario card docker"
 description: "Add comentario em uma action docker"
 author: "Fernando Spelling"
 inputs:
@@ -28,5 +28,6 @@ runs:
     - ${{ inputs.issue-id }}
     - ${{ inputs.comment }}
     - ${{ inputs.GITHUB_REPOSITORY }}
+
 
 
