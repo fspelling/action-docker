@@ -17,6 +17,9 @@ inputs:
 outputs:
   comment_id:
     description: "ID do comentário adicionado"
+branding:
+  icon: "archive"
+  color: "gray-black"
 runs:
   using: "docker"
   image: Dockerfile
@@ -25,3 +28,4 @@ runs:
     - ${{ inputs.issue-id }}
     - ${{ inputs.comment }}
     - ${{ inputs.GITHUB_REPOSITORY }}
+
